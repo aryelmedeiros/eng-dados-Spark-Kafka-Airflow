@@ -1,9 +1,13 @@
 #### Esse projeto é baseado no repositório: https://github.com/cmdviegas/docker-hadoop-cluster 
 
+Acessando o banco de dados pleo nó mestre: psql -h db -p 5432 -U postgres -d hive_metastore
+
+Verficar se o Conector entre o Kafka e o Postgres está funcionando:  curl http://node-master:8083/connectors/cursospark-connector/status
 
 Algum dos problemas encontrados com o projeto que ainda não foram resolvidos:
 
--  Aparentemente há uma incompatibilidade entre a versão do Apache Spark, Apache Kakfa que faz com que o consumo dos dados por streaming não seja possivel. 
+-  Aparentemente há uma incompatibilidade entre a versão do Apache Spark, Apache Kakfa que faz com que o consumo dos dados por streaming não seja possivel.
+
 
 ## Deploying a cluster with Apache Hadoop 3.3.5 + Apache Spark 3.4.1 + Apache Hive 3.1.3
 
