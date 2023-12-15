@@ -1,6 +1,8 @@
 #### Esse projeto é baseado no repositório: https://github.com/cmdviegas/docker-hadoop-cluster 
 
-Depois que o cluster estiver funcionando, seguir o passo a passo em `7_Primeiros_exemplos_-_Kafka.txt` para instalar corretamente o Kafka, Debezium e configurar o conector com o Postgres  
+Depois que o cluster estiver funcionando, seguir o passo a passo em `7_Primeiros_exemplos_-_Kafka.txt` para instalar corretamente o Kafka, Debezium e configurar o conector com o Postgres.
+
+Uma vez que o Kakfa esteja devidamente configurado, a ideia é usar o script `populate.py` para preencher a tabela do Postgres DB com os dados do arquivo `cars.csv` e depois utilizar `spark.py` para incializar o consumo e processamento dos dados inseridos no DB. O arquivo `Spark.ipynb` é uma alternativa para caso alguma das configurações do cluster estejam incorretas, é possivel demonstrar o Spark em funcionamento fora do cluster.
 
 Comandos uteis:
 - Acessando o banco de dados pleo nó mestre:
