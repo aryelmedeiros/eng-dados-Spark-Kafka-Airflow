@@ -1,8 +1,16 @@
 #### Esse projeto é baseado no repositório: https://github.com/cmdviegas/docker-hadoop-cluster 
 
-Acessando o banco de dados pleo nó mestre: psql -h db -p 5432 -U postgres -d hive_metastore
+Depois que o cluster estiver funcionando, seguir o passo a passo em `7_Primeiros_exemplos_-_Kafka.txt` para instalar corretamente o Kafka, Debezium e configurar o conector com o Postgres  
 
-Verficar se o Conector entre o Kafka e o Postgres está funcionando:  curl http://node-master:8083/connectors/cursospark-connector/status
+Comandos uteis:
+- Acessando o banco de dados pleo nó mestre:
+```
+psql -h db -p 5432 -U postgres -d hive_metastore
+```
+- Verficar se o Conector entre o Kafka e o Postgres está funcionando: 
+```
+curl http://node-master:8083/connectors/cursospark-connector/status
+```
 
 Algum dos problemas encontrados com o projeto que ainda não foram resolvidos:
 
