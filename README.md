@@ -3,7 +3,7 @@
 
 Algum dos problemas encontrados com o projeto que ainda não foram resolvidos:
 
--  Aparentemente há uma incompatibilidade entre a versão do Apache Spark, Apache Kakfa que faz com que o Streaming dos dados não seja possivel. 
+-  Aparentemente há uma incompatibilidade entre a versão do Apache Spark, Apache Kakfa que faz com que o consumo dos dados por streaming não seja possivel. 
 
 ## Deploying a cluster with Apache Hadoop 3.3.5 + Apache Spark 3.4.1 + Apache Hive 3.1.3
 
